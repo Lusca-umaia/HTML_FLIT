@@ -1,0 +1,146 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+            margin: 0 auto;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            gap: 20px;
+        }
+
+        .boxForm {
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: center;
+        }
+
+        .boxFormTwo {
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        input {
+            padding: 5px;
+            border: 2px solid red;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        .flex {
+            width: 180px;
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+            padding: 5px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        .enviar {
+            display: flex;
+            width: 200px;
+            justify-content: center;
+        }
+
+        #button {
+            background-color: black;
+            border: none;
+            padding: 10px;
+            color: white;
+        }
+    </style>
+    <h1>Formulário</h1><br>
+    <form>
+        <div class="boxForm">
+            <label for="Modelo_carro">Modelo</label>
+            <input placeholder="Ex: Picape" type="text" id="Modelo_carro">
+        </div>
+        <div class="boxForm">
+            <label for="Marca_carro">Marca</label>
+            <input placeholder="Ex: Chevrolet" type="text" id="Marca_carro">
+        </div>
+        <div class="boxForm">
+            <label for="Ano_carro">Ano</label>
+            <input placeholder="Ex: 2020" type="text" id="Ano_carro">
+        </div>
+        <div class="boxForm">
+            <label for="Quilometragem_carro">Quilometragem</label>
+            <input placeholder="Ex: 1000 Km" type="text" id="Quilometragem_carro">
+        </div>
+        <div class="boxForm">
+            <label for="Valor_carro">Valor</label>
+            <input placeholder="Ex: 20.000 R$" type="text" id="Valor_carro">
+        </div>
+        <div class="boxFormTwo">
+            <h2>Situação do carro</h2><br>
+            <div class="flex">
+                <input type="radio" id="Carro_novo" value="carro_novo">
+                <label for="Carro_novo">Carro Novo</label>
+            </div>
+            <br>
+            <div class="flex">
+                <input type="radio" id="Carro_velho" value="carro_velho">
+                <label for="Carro_velho">Carro Velho</label>
+            </div>
+        </div>
+        <div class="boxFormTwo">
+            <h2>Adicionais</h2><br>
+            <div class="flex">
+                <input type="checkbox" id="Airbag" value="Airbag">
+                <label for="Airbag">Airbag</label>
+            </div>
+            <br>
+            <div class="flex">
+                <input type="checkbox" id="Alarme" value="Alarme">
+                <label for="Alarme">Alarme</label>
+            </div>
+            <br>
+            <div class="flex">
+                <input type="checkbox" id="Ar_condicionado" value="Ar_condicionado">
+                <label for="Ar_condicionado">Ar-condicionado</label>
+            </div>
+        </div>
+        <div class="boxFormTwo">
+            <h2>Final da Placa</h2>
+            <select>
+                <option value="valor1">1 e 2</option>
+                <option value="valor2" selected>3 e 4</option>
+                <option value="valor3">5 e 6</option>
+                <option value="valor3">7 e 8</option>
+            </select>
+        </div>
+        <div class="Enviar">
+            <input type="submit" id="button">
+        </div>
+    </form>
+</body>
+
+</html>
